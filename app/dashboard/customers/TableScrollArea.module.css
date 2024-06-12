@@ -1,0 +1,68 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--mantine-color-body);
+    transition: box-shadow 150ms ease;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-bottom: rem(1px) solid
+        light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-3));
+    }
+  }
+  
+  .scrolled {
+    box-shadow: var(--mantine-shadow-sm);
+  }
+  /* TableScrollArea.module.css */
+  .header {
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0; /* Default background color */
+    font-weight: bold;
+    z-index: 1; /* Ensure header is above content */
+    transition: box-shadow 150ms ease;
+    border-bottom: 1px solid var(--mantine-color-dark-3); /* Mantine-like border bottom */
+}
+
+.scrolled .header {
+    background-color: #e0e0e0; /* Background color when scrolled */
+    box-shadow: var(--mantine-shadow-sm); /* Mantine-like shadow */
+}
+/* TableScrollArea.module.css */
+
+.button {
+  margin-top: 2px;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.lightButton {
+  background-color: #ffffff;
+  border-color:#0850ecdc;
+  color: #333333;
+}
+
+.redOutlineButton {
+  background-color: transparent;
+  border-color: #ff0000;
+  color: #ff0000;
+}
+
+.redOutlineButton:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+.lightButton:hover {
+  background-color: #0850ecdc;
+  color: #ffffff;
+}
